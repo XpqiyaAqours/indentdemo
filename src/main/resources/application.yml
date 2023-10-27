@@ -1,0 +1,20 @@
+server:
+  port: 9999
+
+spring:
+  datasource:
+    username: root
+    password: Binary888
+    url: jdbc:mysql://gz-cynosdbmysql-grp-pnot8c7n.sql.tencentcdb.com:25502/sdb
+
+logging:
+  level:
+    com.testg: debug
+
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: deleted
+      logic-not-delete-value: 0
+      logic-delete-value: 1
+
